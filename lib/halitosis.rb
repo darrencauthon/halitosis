@@ -1,5 +1,7 @@
-require "halitosis/version"
+Dir[File.dirname(__FILE__) + '/halitosis/*.rb'].each {|file| require file }
 
 module Halitosis
-  # Your code goes here...
+  def self.to_item value
+    {}
+  end
 end
